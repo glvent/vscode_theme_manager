@@ -18,6 +18,11 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Dev script cache (editor PID)
+logs/editor-pid.json
+.editor-pid.json
+.editor_pid.json
+
 # Optional: local env (uncomment if you add .env)
 # .env
 # .env.*.local

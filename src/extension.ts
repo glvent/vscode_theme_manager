@@ -8,6 +8,7 @@ import {
   CUSTOM_FILE_ICON_THEME_ID,
   CUSTOM_PRODUCT_ICON_THEME_ID,
 } from './styleManager';
+import { openColorThemeEditor } from './colorThemeEditor/panel';
 
 export function activate(context: vscode.ExtensionContext): void {
   registerThemeDiscoveryCacheInvalidation(context);
@@ -30,10 +31,8 @@ async function openStyleManager(_context: vscode.ExtensionContext): Promise<void
   );
 }
 
-async function openColorEditor(_context: vscode.ExtensionContext): Promise<void> {
-  await vscode.window.showInformationMessage(
-    'Color Theme Editor will let you fork and edit color themes. (Coming in a later step.)'
-  );
+async function openColorEditor(context: vscode.ExtensionContext): Promise<void> {
+  openColorThemeEditor(context);
 }
 
 async function openFontEditor(_context: vscode.ExtensionContext): Promise<void> {
