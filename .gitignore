@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build output
+out/
+*.tsbuildinfo
+
+# Packaged extension
+*.vsix
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional: local env (uncomment if you add .env)
+# .env
+# .env.*.local
+
+# Generated assets (keep JSON themes; ignore large binaries)
+generated/product-icon-font.woff
+
+# IDE / editor (optional: remove .cursor/ if you want to commit Cursor plans)
+.cursor/

@@ -1,0 +1,17 @@
+{
+  "fonts": [
+    {
+      "id": "style-generator-font",
+      "src": [
+        {
+          "path": "./product-icon-font.woff",
+          "format": "woff"
+        }
+      ],
+      "weight": "normal",
+      "style": "normal",
+      "size": "150%"
+    }
+  ],
+  "iconDefinitions": {}
+}

@@ -1,0 +1,71 @@
+{
+  "name": "vscode-style-generator",
+  "displayName": "Style Generator",
+  "description": "Combine color, font, file icon, and product icon themes into named styles; fork and edit color themes; import custom icon packs.",
+  "version": "0.1.0",
+  "publisher": "vscode-style-generator",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes",
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:styleGenerator.openStyleManager",
+    "onCommand:styleGenerator.openColorEditor",
+    "onCommand:styleGenerator.openFontEditor",
+    "onCommand:styleGenerator.openFileIconEditor",
+    "onCommand:styleGenerator.openProductIconEditor"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "styleGenerator.openStyleManager",
+        "title": "Style Generator: Open Style Manager"
+      },
+      {
+        "command": "styleGenerator.openColorEditor",
+        "title": "Style Generator: Open Color Editor"
+      },
+      {
+        "command": "styleGenerator.openFontEditor",
+        "title": "Style Generator: Open Font Editor"
+      },
+      {
+        "command": "styleGenerator.openFileIconEditor",
+        "title": "Style Generator: Open File Icon Editor"
+      },
+      {
+        "command": "styleGenerator.openProductIconEditor",
+        "title": "Style Generator: Open Product Icon Editor"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "style-generator-file-icons",
+        "label": "Style Generator (File Icons)",
+        "path": "./generated/file-icon-theme.json"
+      }
+    ],
+    "productIconThemes": [
+      {
+        "id": "style-generator-product-icons",
+        "label": "Style Generator (Product Icons)",
+        "path": "./generated/product-icon-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  }
+}
