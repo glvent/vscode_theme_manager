@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M2 2v12h12V5l-3-3H2zm2 2h4v2H4V4zm0 4h8v2H4V8zm0 4h6v2H4v-2z" fill="currentColor"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <!-- tab (duotone accent) -->
+  <path d="M2 3h4l2 2h6v1H8L6 4H2V3z" fill="#94a3b8"/>
+  <!-- pocket -->
+  <path d="M2 6v8h12V6H2z" fill="#ffffff"/>
+</svg>

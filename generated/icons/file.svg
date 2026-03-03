@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect width="14" height="12" x="1" y="2" fill="currentColor" rx="1"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <!-- body -->
+  <path d="M1 2h10v2h3v11H1V2z" fill="#ffffff"/>
+  <!-- folded corner (duotone accent) -->
+  <path d="M11 2h3v2h-2V2z" fill="#94a3b8"/>
+</svg>

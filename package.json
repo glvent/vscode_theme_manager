@@ -16,7 +16,9 @@
     "onCommand:styleGenerator.openColorEditor",
     "onCommand:styleGenerator.openFontEditor",
     "onCommand:styleGenerator.openFileIconEditor",
-    "onCommand:styleGenerator.openProductIconEditor"
+    "onCommand:styleGenerator.openProductIconEditor",
+    "onCommand:styleGenerator.applyStyle",
+    "onCommand:styleGenerator.saveCurrentAsStyle"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -40,6 +42,14 @@
       {
         "command": "styleGenerator.openProductIconEditor",
         "title": "Style Generator: Open Product Icon Editor"
+      },
+      {
+        "command": "styleGenerator.applyStyle",
+        "title": "Style Generator: Apply Style"
+      },
+      {
+        "command": "styleGenerator.saveCurrentAsStyle",
+        "title": "Style Generator: Save Current as Style"
       }
     ],
     "iconThemes": [
